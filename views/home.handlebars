@@ -1,0 +1,715 @@
+<link rel="stylesheet" href="/css/style.css">
+<script src="/js/script.js"></script>
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid ">
+        <a class="navbar-brand ms-4" href="#">
+            <img src="/assets/icon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Pequenos Passos
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#problema">Problema</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#funcionalidades">Funcionalidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#como-funciona">Como Funciona</a>
+                </li>
+            </ul>
+
+            <div class="d-flex me-5">
+                <a href="/apk/PequenosPassos_v1.0.apk" class="btn btn-primary">
+                    <img src="/assets/download.svg" alt="Download"
+                        style="filter: brightness(0) invert(1); width: 20px; height: 20px;">
+                    Baixar APK
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</nav>
+
+<div>
+
+    <div class="container py-5">
+        <div class="row align-items-center g-4">
+
+            <div class="col-lg-6">
+                <div class="card-conteudo">
+                    <div class="badge-custom mb-3">
+                        <i class="bi bi-book me-1"></i> Para Educação Infantil - Alinhado à BNCC
+                    </div>
+
+                    <h1 class="fw-bold display-6 mb-2">Avalie cada criança em 30 segundos.</h1>
+                    <h1 class="fw-bold display-6 mb-3">Com um toque.</h1>
+
+                    <p class="text-muted mb-4" style="font-size: 1.05rem;">
+                        O Pequenos Passos digitaliza o acompanhamento pedagógico com uma escala visual intuitiva — sem
+                        planilhas, sem cadernos, sem burocracia.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <a href="/apk/PequenosPassos_v1.0.apk" class="btn btn-roxo d-flex align-items-center gap-2">
+                            <i class="bi bi-download"></i> Baixar Grátis - Android
+                        </a>
+                        <a href="#como-funciona" class="btn btn-outline-roxo">
+                            Ver como funciona
+                        </a>
+                    </div>
+
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <div class="stat-item">
+                                <div class="numero">~30s</div>
+                                <div class="label">por avaliação</div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="stat-item">
+                                <div class="numero">5 níveis</div>
+                                <div class="label">escala visual</div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="stat-item">
+                                <div class="numero">100%</div>
+                                <div class="label">alinhado BNCC</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 d-flex justify-content-center">
+                <div class="phone-mockup">
+                    <div class="screen">
+                        <div class="notch">
+                            <div class="camera"></div>
+                        </div>
+
+                        <div class="phone-content">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="fw-bold" style="font-size: 0.8rem;">9:41</span>
+                                <div class="d-flex gap-1">
+                                    <img src="/assets/reception-4.svg" alt="Signal">
+                                    <img src="/assets/wifi.svg" alt="Wi-Fi">
+                                    <img src="/assets/battery-full.svg" alt="Battery">
+                                </div>
+                            </div>
+
+                            <h6 class="fw-bold text-center mb-3">Avaliar Aluno</h6>
+
+                            <div class="card border-0 shadow-sm mb-3">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center"
+                                            style="width: 48px; height: 48px;">
+                                            <img class="fs-4 text-primary" src="/assets/person.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <span class="fw-bold d-block">Carlos</span>
+                                            <span class="text-muted" style="font-size: 0.75rem;">Pré 1 -
+                                                12/06/2026</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container py-4">
+                                <p class="text-center fw-semibold mb-3">Socialização</p>
+                                <div class="row justify-content-center g-3">
+                                    <div class="col-auto">
+                                        <div class="emote-box" onclick="selecionar(this)">😢</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="emote-box" onclick="selecionar(this)">😟</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="emote-box" onclick="selecionar(this)">😐</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="emote-box" onclick="selecionar(this)">🙂</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="emote-box" onclick="selecionar(this)">😊</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button
+                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 mb-2"
+                                style="font-size: 0.8rem; background: #6f42c1; border: none;">
+                                Salvar Avaliação
+                            </button>
+                        </div>
+
+                        <div class="home-indicator"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <section id="problema" class="card"
+        style="background: #0F0920; margin-right: 80px; margin-left: 80px; margin-top: 20px; max-width: 1800px">
+        <div class="container p-4">
+            <div style="margin: 0 auto;">
+                <h2 style="color: #FFD700; font-weight: 700; font-size: 1rem; margin-bottom: 10px; margin-top: 10px;">O
+                    PROBLEMA</h2>
+                <h3 style="color: #FFFFFF">O registro manual rouba tempo do que mais importa: as crianças.</h3>
+                <p class="mb-5" style="color: #808080;">
+                    Cadernos, fichas impressas e planilhas consomem horas preciosas que deveriam ser dedicadas ao
+                    desenvolvimento infantil.
+                </p>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card-body"
+                            style="background:#241452; padding: 30px; border-radius: 12px; box-shadow: 0 2px 15px rgba(0,0,0,0.08); margin-bottom: 20px; height: 100%;">
+                            <div style="font-size: 1.8rem; margin-right: 15px">
+                                <img src="/assets/file-earmark-ruled.svg"
+                                    style="filter: brightness(0) invert(1); width: 20px; height: 20px;" alt="Arquivo">
+                            </div>
+                            <div>
+                                <h4 class="card-title" style="color: #FFFFFF;">Registros manuais lentos</h4>
+                                <p class="card-text" style="color: #FFFFFF">Planilhas físicas e cadernos geram
+                                    retrabalho, inconsistências e risco real de perda de informação sobre cada criança.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card-body"
+                            style="background:#241452; padding: 30px; border-radius: 12px; box-shadow: 0 2px 15px rgba(0,0,0,0.08); margin-bottom: 20px; height: 100%;">
+                            <div style="font-size: 1.8rem; margin-right: 15px">
+                                <img src="/assets/clock.svg"
+                                    style="filter: brightness(0) invert(1); width: 20px; height: 20px;" alt="Arquivo">
+                            </div>
+                            <div>
+                                <h4 class="card-title" style="color: #FFFFFF;">Tempo esgotado em burocracia</h4>
+                                <p class="card-text" style="color: #FFFFFF;">Em turmas grandes, o acompanhamento
+                                    individual
+                                    torna-se
+                                    inviável, comprometendo a qualidade da avaliação pedagógica.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card-body"
+                            style="background:#241452; padding: 30px; border-radius: 12px; box-shadow: 0 2px 15px rgba(0,0,0,0.08); margin-bottom: 20px; height: 100%;">
+                            <div style="font-size: 1.8rem; margin-right: 15px">
+                                <img src="/assets/slash-circle.svg"
+                                    style="filter: brightness(0) invert(1); width: 20px; height: 20px;" alt="Arquivo">
+                            </div>
+                            <div>
+                                <h4 class="card-title" style="color: #FFFFFF;">Relatórios que chegam tarde</h4>
+                                <p class="card-text" style="color: #FFFFFF;">Sem histórico consolidade, as famílias só
+                                    recebem devolutivas no final do semestre -- quando ja é tarde para intervir no
+                                    desenvolvimento da criança.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</section>
+
+<section id="funcionalidades"
+    style="background: #FFFFFF; margin-right: 80px; margin-left: 80px; margin-top: 20px; max-width: 1800px">
+    <div>
+        <div>
+            <h2 style="color: #A020F0; font-weight: 700; font-size: 1rem; margin-bottom: 10px; margin-top: 10px;">
+                Funcionalidades</h2>
+            <h3 style="color: #000000; max-width: 500px;">Tudo que o educador precisa, em um só lugar.</h3>
+        </div>
+        <p style="max-width: 600px;">Desenvolvido do zero para a rotina da Educação Infantil, com cada detalhe pensado
+            para o professor em sala de aula.</p>
+    </div>
+
+    <div class="py-4" style="background-color: pink;">
+        <div class="row g-4 align-items-start">
+            <div class="col-lg-7">
+                <div class="d-flex align-items-start gap-3" style="margin-top: 180px;">
+                    <div class="bg-light rounded-3 d-flex align-items-center justify-content-center"
+                        style="width: 60px; height: 60px; flex-shrink: 0; margin-left: 10px;">
+                        <img src="/assets/hand-thumbs-up.svg" alt="Thumbs Up" style="width: 32px; height: 32px;">
+                    </div>
+                    <div>
+                        <h2 class="fw-bold">Escala Visual de Aplicação</h2>
+                        <p class="text-muted" style="font-size: 1.05rem; max-width: 700px">
+                            Interface baseada em escala pictórica afetiva em 5 pontos. O professor toca em uma expressão
+                            facial —
+                            sem digitar, sem selecionar texto. 30 segundos por aluno
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="card border-0 shadow-sm p-4" style="max-width: 650px;">
+                    <h4 class="fw-bold mb-3">Escala de Avaliação</h4>
+
+                    <div class="bg-light rounded-3 p-2 mb-2">
+                        <div class="d-flex align-items-center gap-2">
+                            <span>😢</span>
+                            <span style="font-size: 0.8rem; flex: 1;">Insatisfatório</span>
+                            <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                        </div>
+                    </div>
+                    <div class="bg-light rounded-3 p-2 mb-2">
+                        <div class="d-flex align-items-center gap-2">
+                            <span>😟</span>
+                            <span style="font-size: 0.8rem; flex: 1;">Precisa Melhorar</span>
+                            <span class="bg-warning rounded-circle" style="width: 10px; height: 10px;"></span>
+                        </div>
+                    </div>
+                    <div class="bg-light rounded-3 p-2 mb-2">
+                        <div class="d-flex align-items-center gap-2">
+                            <span>😐</span>
+                            <span style="font-size: 0.8rem; flex: 1;">Regular</span>
+                            <span class="rounded-circle" style="width: 10px; height: 10px; background: #7F00FF;"></span>
+                        </div>
+                    </div>
+                    <div class="bg-light rounded-3 p-2 mb-2">
+                        <div class="d-flex align-items-center gap-2">
+                            <span>🙂</span>
+                            <span style="font-size: 0.8rem; flex: 1;">Bom</span>
+                            <span class="bg-primary rounded-circle" style="width: 10px; height: 10px;"></span>
+                        </div>
+                    </div>
+                    <div class="bg-light rounded-3 p-2">
+                        <div class="d-flex align-items-center gap-2">
+                            <span>😊</span>
+                            <span style="font-size: 0.8rem; flex: 1;">Excelente</span>
+                            <span class="bg-success rounded-circle" style="width: 10px; height: 10px;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container-fluid px-4 py-5">
+        <div class="row g-4">
+
+            <div class="col-md-6" style="background-color: aquamarine">
+                <div class="d-flex align-items-start gap-3 p-3 rounded-3 h-100">
+                    <div class="bg-light rounded-3 p-3 d-flex align-items-center justify-content-center"
+                        style="width: 56px; height: 56px; flex-shrink: 0;">
+                        <img src="/assets/house-door.svg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="fw-bold">Gestão Hierárquica</h5>
+                        <p class="text-muted" style="font-size: 0.95rem;">
+                            Organize escolas, turmas e alunos em uma plataforma única com controle de acesso por perfil
+                            — Super Admin, Gestor e Professor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6" style="background-color: aqua;">
+                <div class="d-flex align-items-start gap-3 p-3 rounded-3 h-100">
+                    <div class="bg-light rounded-3 p-3 d-flex align-items-center justify-content-center"
+                        style="width: 56px; height: 56px; flex-shrink: 0;">
+                        <img src="/assets/stack.svg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="fw-bold">Métricas Alinhadas à BNCC</h5>
+                        <p class="text-muted" style="font-size: 0.95rem;">
+                            Crie critérios customizáveis por turma alinhados aos Campos de Experiências da Base Nacional
+                            Comum Curricular.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6" style="background-color: yellow;">
+                <div class="d-flex align-items-start gap-3 p-3 rounded-3 h-100">
+                    <div class="bg-light rounded-3 p-3 d-flex align-items-center justify-content-center"
+                        style="width: 56px; height: 56px; flex-shrink: 0;">
+                        <img src="/assets/bar-chart-fill.svg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="fw-bold">Relatórios Analíticos</h5>
+                        <p class="text-muted" style="font-size: 0.95rem;">
+                            Histórico temporal completo com geração automática de relatórios por aluno e por turma,
+                            prontos para compartilhar com as famílias.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6" style="background: palevioletred;">
+                <div class="d-flex align-items-start gap-3 p-3 rounded-3 h-100">
+                    <div class="bg-light rounded-3 p-3 d-flex align-items-center justify-content-center"
+                        style="width: 56px; height: 56px; flex-shrink: 0;">
+                        <img src="/assets/shield.svg" alt="House">
+                    </div>
+                    <div>
+                        <h5 class="fw-bold">Segurança e LGPD</h5>
+                        <p class="text-muted" style="font-size: 0.95rem;">
+                            Dados infantis protegidos com criptografia BCrypt, autenticação JWT e controle de acesso por
+                            escola — em conformidade com a LGPD.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="como-funciona">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="text-uppercase fw-bold" style="color: #6f42c1; font-size: 0.9rem; letter-spacing: 2px;">Como
+                Funciona</h2>
+            <h3 class="display-5 fw-bold">Quatro passos. Menos de dois minutos.</h3>
+            <p class="text-muted" style="max-width: 600px; margin: 10px auto 0;">
+                Do cadastro ao relatório, o Pequenos Passos foi desenhado para ser <br> invisível — o professor nem
+                percebe
+                que está usando tecnologia.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-3">
+                <div class="passo-card mb-4" style="background-color: purple; padding: 1.6rem">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <span class="passo-numero">1</span>
+                        <div class="passo-icone icone-roxo">
+                            <i class="bi bi-building"></i>
+                        </div>
+                    </div>
+                    <h5 class="fw-bold">Cadastre sua escola</h5>
+                    <p class="text-muted" style="font-size: 0.95rem; margin-bottom: 0;">
+                        Configure escola, turmas, alunos e professores em minutos. Tudo hierarquicamente organizado.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 col-lg-3">
+                <div class="passo-card" style="background-color: palevioletred; padding: 0.924rem;">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <span class="passo-numero">2</span>
+                        <div class="passo-icone icone-verde">
+                            <i class="bi bi-sliders2"></i>
+                        </div>
+                    </div>
+                    <h5 class="fw-bold">Configure as métricas</h5>
+                    <p class="text-muted" style="font-size: 0.95rem; margin-bottom: 0;">
+                        Crie critérios alinhados à BNCC específicos para cada turma: socialização, linguagem, autonomia
+                        e mais.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 col-lg-3">
+                <div class="passo-card bg-primary" style="padding: 0.9rem">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <span class="passo-numero">3</span>
+                        <div class="passo-icone icone-amarelo">
+                            <i class="bi bi-hand-index-thumb"></i>
+                        </div>
+                    </div>
+                    <h5 class="fw-bold">Avalie com um toque</h5>
+                    <p class="text-muted" style="font-size: 0.95rem; margin-bottom: 0;">
+                        Durante a rotina, registre o desenvolvimento de cada criança tocando em uma expressão. 30
+                        segundos por aluno.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 col-lg-3">
+                <div class="passo-card bg-success" style="padding: 1.55rem;">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <span class="passo-numero">4</span>
+                        <div class="passo-icone icone-azul">
+                            <i class="bi bi-file-earmark-text"></i>
+                        </div>
+                    </div>
+                    <h5 class="fw-bold">Gere os relatórios</h5>
+                    <p class="text-muted" style="font-size: 0.95rem; margin-bottom: 0;">
+                        O sistema consolida automaticamente os dados em gráficos de evolução temporal prontos para
+                        exportar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container bg-primary-subtle text-center" style="margin-top: 20px; max-width: 1700px;">
+    <h5 class="text-muted" style="text-align: center;">Eficiência Comprovada</h5>
+    <h1 style="text-align: center;">Cada aluno avaliado em <br>30 <br>segundos</h1>
+    <h5 class="text-muted" style="text-align: center;">Contra minutos de preenchimento manual por criança. Em uma turma
+        de 20 alunos, você economiza horas por semana — tempo de volta para o que realmente importa.</h5>
+    <div class="badge bg-info d-inline-flex align-items-center gap-2 px-4 py-2 rounded-pill text-white">
+        <img src="/assets/patch-check.svg" alt="Check"
+            style="filter: brightness(0) invert(1); width: 20px; height: 20px;">
+        <h4><span class="badge text-center" style="display: block; width: 100%; margin-top: 5px;">Comprovado em testes
+                com
+                dispositivos Android reais</span></h4>
+    </div>
+</div>
+
+<div class="container py-4">
+
+    <div class="card app-card shadow-sm p-3">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+
+            <button class="btn btn-light rounded-circle">
+                <img src="/assets/box-arrow-left.svg" alt="Box Arrow Left">
+            </button>
+
+            <h6 class="mb-0 fw-semibold">
+                Avaliar Aluno
+            </h6>
+
+            <div class="d-flex gap-2">
+                <button class="btn btn-light rounded-circle">
+                    EF
+                </button>
+
+                <button class="btn btn-light rounded-circle">
+                    <img src="/assets/box-arrow-right.svg" alt="Box Arrow Right">
+                </button>
+            </div>
+
+        </div>
+
+        <div class="student-card mb-4">
+
+            <div class="d-flex align-items-center gap-3">
+
+                <div class="avatar-circle">
+                    <img src="/assets/person.svg" alt="Person">
+                </div>
+
+                <div>
+                    <div class="fw-bold">Abraão</div>
+                    <small class="text-muted">
+                        Pré I
+                    </small>
+                    <br>
+                    <small class="text-muted">
+                        12/06/2026
+                    </small>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="text-center mb-4">
+            <h6 class="fw-bold mb-1">
+                Avaliação por Métrica
+            </h6>
+
+            <small class="text-muted">
+                1 = precisa melhorar • 5 = excelente
+            </small>
+        </div>
+
+        <div class="metric-card mb-3">
+
+            <div class="text-center fw-semibold mb-3">
+                Reconhecimento das Cores
+            </div>
+
+            <div class="row g-2">
+
+                <div class="col">
+                    <div class="emoji-option">😢</div>
+                </div>
+
+                <div class="col">
+                    <div class="emoji-option selected-warning">☹️</div>
+                </div>
+
+                <div class="col">
+                    <div class="emoji-option">😐</div>
+                </div>
+
+                <div class="col">
+                    <div class="emoji-option">🙂</div>
+                </div>
+
+                <div class="col">
+                    <div class="emoji-option">😊</div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-2 status-warning">
+                PRECISA MELHORAR
+            </div>
+
+        </div>
+
+        <div class="metric-card mb-3">
+
+            <div class="text-center fw-semibold mb-3">
+                Socialização
+            </div>
+
+            <div class="row g-2">
+
+                <div class="col">
+                    <div class="emoji-option">😢</div>
+                </div>
+                <div class="col">
+                    <div class="emoji-option">☹️</div>
+                </div>
+                <div class="col">
+                    <div class="emoji-option">😐</div>
+                </div>
+
+                <div class="col">
+                    <div class="emoji-option selected-info">
+                        🙂
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="emoji-option">😊</div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-2 status-info">
+                BOM
+            </div>
+
+        </div>
+
+        <div class="metric-card mb-4">
+
+            <div class="text-center fw-semibold mb-3">
+                Reconhecimento das Vogais
+            </div>
+
+            <div class="row g-2">
+
+                <div class="col">
+                    <div class="emoji-option">😢</div>
+                </div>
+                <div class="col">
+                    <div class="emoji-option">☹️</div>
+                </div>
+                <div class="col">
+                    <div class="emoji-option">😐</div>
+                </div>
+                <div class="col">
+                    <div class="emoji-option">🙂</div>
+                </div>
+
+                <div class="col">
+                    <div class="emoji-option selected-success">
+                        😊
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-2 status-success">
+                EXCELENTE
+            </div>
+
+        </div>
+
+        <button class="btn save-btn text-white w-100">
+            <img class="me-2" src="/assets/check-circle.svg" alt="Check Circle">
+            Salvar Avaliação
+        </button>
+
+
+
+    </div>
+
+</div>
+
+<div class="container bg-primary-subtle text-center" style="margin-top: 20px; margin-bottom: 20px; max-width: 1700px;">
+    <h2 class="text-muted" style="text-align: center;">Pronto para começar?</h2>
+    <h5 class="text-muted" style="text-align: center;">Baixe o Pequenos Passos gratuitamente para Android e transforme o
+        acompanhamento pedagógico da sua turma.</h5>
+    <a href="/apk/PequenosPassos_v1.0.apk" class="btn btn-info" style="color: white;">
+        <img src="/assets/download.svg" style="filter: brightness(0) invert(1); width: 20px; height: 20px;"
+            alt="Download">
+        Baixar APK - Android
+    </a>
+    <br>
+    <span class="badge bg-info">
+        <img src="/assets/phone.svg" style="filter: brightness(0) invert(1); width: 20px; height: 20px;" alt="Phone">
+        Versão 1.0.0
+        Requer Android 6.0+
+        iOS em breve
+    </span>
+    <br>
+    <span class="badge bg-info">
+        <img src="/assets/patch-check.svg" style="filter: brightness(0) invert(1); width: 20px; height: 20px;"
+            alt="Check">
+        Alinhado à BNCC
+    </span>
+    <span class="badge bg-info">
+        <img src="/assets/shield.svg" style="filter: brightness(0) invert(1); width: 20px; height: 20px;" alt="Shield">
+        Conforme a LGPD
+    </span>
+    <span class="badge bg-info">
+        <img src="/assets/lock.svg" style="filter: brightness(0) invert(1); width: 20px; height: 20px;" alt="">
+        Dados criptografados
+    </span>
+</div>
+
+</div>
+
+<footer class="footer-custom py-4">
+    <div class="container-fluid px-lg-5">
+        <div class="row align-items-center">
+
+            <div class="col-4">
+                <div class="d-flex align-items-center">
+                    <div class="logo-box me-2">
+                        <img src="/assets/icon.png" alt="Logo" width="30" height="24"
+                            class="d-inline-block align-text-top">
+                    </div>
+
+                    <span class="fw-bold text-white">
+                        Pequenos Passos
+                    </span>
+                </div>
+            </div>
+
+            
+            <div class="col-4 text-center">
+                <span class="copyright">
+                    © 2026 Pequenos Passos
+                </span>
+            </div>
+
+            <div class="col-4 text-end">
+                <span class="footer-dot bg-warning"></span>
+                <span class="footer-dot pink"></span>
+                <span class="footer-dot purple"></span>
+                <span class="footer-dot info"></span>
+                <span class="footer-dot success"></span>
+            </div>
+
+        </div>
+    </div>
+</footer>
